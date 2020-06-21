@@ -1,0 +1,44 @@
+{
+  "name": "voronovam.github.io",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "voronovam",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt build && nuxt export",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.13.0",
+    "html-loader": "^0.5.5",
+    "jquery": "^3.4.1",
+    "mediaelement": "^4.2.16",
+    "microplugin": "0.0.3",
+    "moment": "^2.24.0",
+    "nuxt": "^2.13",
+    "vue": "^2.6.11",
+    "vue2-transitions": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.14.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^1.3.5",
+    "suggestions-jquery": "^18.12.0",
+    "vuejs-logger": "^1.5.4"
+  }
+}

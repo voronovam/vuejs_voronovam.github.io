@@ -1,0 +1,67 @@
+.opacity
+  opacity: 0
+
+
+.headline-container,
+.header .btn
+  animation-delay: .8s
+
+
+.section__title
+  animation-delay: .1s
+
+
+.mouse
+  animation-delay: 1s
+
+
+.platform
+  & .gadgets
+    animation-delay: .1s
+
+
+@media (min-width: $desktop)
+  .section__title
+    animation-delay: .2s
+
+
+  .mouse
+    animation-delay: 2s
+
+
+  .platform
+    & .gadgets
+      animation-delay: .2s
+
+
+.page-enter-active, .page-leave-active
+  transition: opacity .5s
+
+.page-enter, .page-leave-active
+  opacity: 0
+
+.bounce-enter-active
+  animation: bounce-in .8s
+
+.bounce-leave-active
+  animation: bounce-out .5s
+
+@keyframes bounce-in
+  0%
+    transform: scale(0)
+
+  50%
+    transform: scale(1.5)
+
+  100%
+    transform: scale(1)
+
+@keyframes bounce-out
+  0%
+    transform: scale(1)
+
+  50%
+    transform: scale(1.5)
+
+  100%
+    transform: scale(0)

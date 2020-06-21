@@ -1,0 +1,36 @@
+@mixin clearfix()
+	&:before,
+	&:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+
+@mixin headline()
+  font-size: 54px
+  text-transform: uppercase
+  writing-mode: vertical-rl
+  transform: rotate(180deg)
+  margin-right: 30px
+  text-align: right
+  @media (max-width: $tablet-landscape)
+    margin-left: 0
+    margin-right: 0
+
+@mixin p()
+	@include font-size(14px)
+	line-height: 18px
+	font-weight: normal
+	margin: 0
+
+@mixin h2()
+  font-size: 2rem
+  margin-bottom: 64px
+
+
+@mixin placeholder
+	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input"
+	@each $placeholder in $placeholders
+		&:#{$placeholder}-placeholder
+			@content
+
