@@ -8,7 +8,7 @@
             | {{title}}
           p.subtitle {{subtitle}}
 
-          nuxt-link(to="/#form").btn ask me
+          nuxt-link(to="/#contact").btn ask me
 
         div.col-lg-4
           div.circle
@@ -51,14 +51,12 @@
 <style scoped lang="sass">
 .header
   $self: &
-  background-image: radial-gradient(circle at bottom right, $color-additional, $color-dark)
   color: #fff
-  min-height: 100vh
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
-
+  margin: auto
   & .h1
     font-size: 56px
     line-height: 1.1
@@ -66,12 +64,6 @@
     position: relative
     z-index: 2
     color: $color-white
-    //background: linear-gradient(45deg,lighten($color-dark, 20%) 0%,$color-accent 100%)
-    //-webkit-background-clip: text
-    //color: $color-accent
-    //-webkit-text-fill-color: transparent
-    //margin: 0 0 30px
-    //display: inline-block
     @media (min-width: $tablet-portrait)
       font-size: 116px
 

@@ -17,6 +17,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'theme-color', content: '#382039' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
@@ -69,8 +70,7 @@ module.exports = {
 
   ],
   generate: {
-    fallback: true,
-    dir: '/Users/voronovam/dev/voronovam.github.io'
+    fallback: true
   },
   target: 'static',
   /*

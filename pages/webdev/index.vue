@@ -1,8 +1,9 @@
 <template lang="pug">
   div
     SvgSprite
-    TopBar
-    Header(title="webdev" subtitle="html/css/js")
+    div.header-wrap
+      TopBar
+      Header(title="webdev" subtitle="html/css/js")
     main.main
       div.container
         div.back-link
@@ -75,6 +76,11 @@
 </script>
 
 <style scoped lang="sass">
+.header-wrap
+  background-image: radial-gradient(circle at bottom right, $color-additional, $color-dark)
+  min-height: 100vh
+  display: flex
+  flex-direction: column
 .page-headline
   @include h2
 

@@ -46,8 +46,8 @@ const TIMEOUT = 1;
 
 <style scoped lang="sass">
 .topbar
-  position: absolute
-  width: 100%
+  //position: absolute
+  //width: 100%
   color: $color-white
   padding: 40px 0 20px
   @media (max-width: $phone)

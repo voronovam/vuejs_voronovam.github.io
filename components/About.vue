@@ -11,7 +11,7 @@
               ul
                 li(v-for="(t, index) in tech" :key="index") {{t.item}}
 
-        div.col-sm-12.col-lg-6.order-md-first
+        div.col-sm-12.col-lg-6.order-lg-first
           div.about__photo(:style="photo")
 
 </template>
